@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant Menu Card</title>
+    <style>
+        body {
+            background-color: #fff9e6;
+            font-family: 'Georgia', serif; /* font-family */
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* box-shadow for raised card effect */
+        .menu-card {
+            background-color: #ffffff;
+            width: 450px;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15); 
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #d4af37;
+        }
+
+        /* transform (rotate & scale) + text-shadow */
+        .offer-banner {
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transform: rotate(-3deg) scale(1.02); 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+        }
+
+        .restaurant-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* font-size, font-weight, text-transform, letter-spacing, text-shadow */
+        .restaurant-name {
+            font-size: 2.2rem; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            color: #2c2c2c;
+            margin: 0 0 0.5rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1); 
+        }
+
+        /* font-style and text-decoration (overline and underline) */
+        .tagline {
+            font-size: 1rem;
+            font-style: italic; 
+            color: #7f8c8d;
+            text-decoration: overline underline; 
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .menu-section {
+            margin-bottom: 1.5rem;
+        }
+
+        /* text-transform: capitalize */
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #8b0000;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize; 
+        }
+
+        .dish-item {
+            margin-bottom: 1rem;
+        }
+
+        .dish-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 1.05rem;
+            color: #333333;
+        }
+
+        .dish-price {
+            color: #27ae60;
+        }
+
+        /* text-indent on dish description first line */
+        .dish-description {
+            font-size: 0.9rem;
+            color: #666666;
+            margin: 0.2rem 0 0 0;
+            text-indent: 20px; 
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-card">
+        <!-- Offer Banner with transform & text-shadow -->
+        <div class="offer-banner">
+            Special Weekend Offer: 20% Off All Starters!
+        </div>
+
+        <!-- Restaurant Name & Tagline -->
+        <div class="restaurant-header">
+            <h1 class="restaurant-name">Spice & Slice</h1>
+            <p class="tagline">Authentic Flavors & Gourmet Delights</p>
+        </div>
+
+        <!-- Menu Section 1: Starters -->
+        <div class="menu-section">
+            <h2 class="section-title">Starters</h2>
+            
+            <div class="dish-item">
+                <div class="dish-header">
+                    <span>Crispy Paneer Tikka</span>
+                    <span class="dish-price">₹299</span>
+                </div>
+                <p class="dish-description">Marinated cottage cheese cubes grilled to smoky perfection with bell peppers and onions.</p>
+            </div>
+
+            <div class="dish-item">
+                <div class="dish-header">
+                    <span>Veg Spring Rolls</span>
+                    <span class="dish-price">₹199</span>
+                </div>
+                <p class="dish-description">Golden crispy rolls stuffed with seasoned fresh vegetables served with tangy dip.</p>
+            </div>
+        </div>
+
+        <!-- Menu Section 2: Main Course -->
+        <div class="menu-section">
+            <h2 class="section-title">Main Course</h2>
+            
+            <div class="dish-item">
+                <div class="dish-header">
+                    <span>aloo gobi</span>
+                    <span class="dish-price">₹99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+                </div>
+                <p class="dish-description">Tender potatoes and cauliflower in a rich, creamy tomato and butter gravy.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
